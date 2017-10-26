@@ -91,11 +91,16 @@ main nav {
 }
 main nav > * {
     position: absolute;
+    display: block;
+    width: 310px;
+}
+
+nav a, nav ins {
+    display: block;
 }
 
 nav ins {
     position: relative;
-    display: block;
     top: -30px;
     text-decoration: none;
     opacity: 0;
@@ -109,18 +114,21 @@ nav div:hover > ins {
 
 
 #twitter, #my_anime_list {
-    top: -180px;
+    top: -210px;
 }
 #twitch, #steam {
-    top: -80px;
+    top: -120px;
 }
 #curious_cat, #psn {
-    top: 20px;
+    top: -30px;
 }
 #avatar-src, #discord {
-    top: 120px;
+    top: 40px;
 }
-#my_anime_list, #steam, #psn, #discord {right: 0; margin-right: -1em}
+#anipictures, #ebooks {
+    top: 130px;
+}
+#my_anime_list, #steam, #psn, #discord, #ebooks {right: 0; margin-right: -1em; text-align: right}
 
 #twitter {
     transform: rotate(25deg);
@@ -141,11 +149,16 @@ nav div:hover > ins {
     transform: rotate(-10deg);
 }
 #psn {
-    transform: rotate(9deg);
+    transform: rotate(-2deg);
 }
 #discord {
     transform: rotate(15deg);
 }
+#anipictures {
+    transform: rotate(-25deg);
+}
+#ebooks {
+    transform: rotate(25deg);
 
 @keyframes float {
     0% {
