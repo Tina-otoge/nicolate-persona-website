@@ -159,6 +159,7 @@ nav div:hover > ins {
 }
 #ebooks {
     transform: rotate(25deg);
+}
 
 @keyframes float {
     0% {
