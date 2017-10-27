@@ -19,7 +19,7 @@ function getBrowser()
 document.getElementById("arrowGoUp").onclick = function() {
   this.className = "bounce";
   setTimeout(function() {
-    if (getBrowser().match(/Chrome|Firefox/)) {
+    if (['Chrome', 'Firefox'].indexOf(getBrowser()) != -1) {
       window.scroll({
         top: 0,
         behavior: 'smooth'
@@ -34,4 +34,3 @@ document.getElementById("arrowGoUp").onclick = function() {
 
   return false;
 };
-
