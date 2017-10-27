@@ -117,6 +117,12 @@ nav div:hover > ins {
   top: 0;
   opacity: 1;
 }
+@media (pointer: none) {
+  nav ins {
+    top: 0;
+    opacity: 1;
+  }
+}
 
 
 #twitter, #my_anime_list {
