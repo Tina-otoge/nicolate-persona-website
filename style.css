@@ -213,7 +213,10 @@ nav div:hover > ins {
 }
 
 #discord-tag {
-  display: none;
+  display: fixed;
+  left: -2000px;
+  top: -2000px;
+  opacity: 0;
 }
 
 /* end of main */
