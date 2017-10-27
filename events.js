@@ -34,3 +34,22 @@ document.getElementById("arrowGoUp").onclick = function() {
 
   return false;
 };
+
+document.getElementById("discord").onmouseenter = function() {
+  var target = document.getElementById("popup-discord");
+  target.innerHTML = "Click on my Discord tag to <strong>Copy it</strong> !";
+  target.className = "show";
+}
+document.getElementById("discord").onmouseleave = function() {
+  var target = document.getElementById("popup-discord");
+  target.className = '';
+} 
+
+document.getElementById("discord").onclick = function() {
+  var target = document.getElementById("discord-tag");
+  copyText = target.select();
+  try {
+    document.execCommand("Copy");
+    target = document.getElementById("popup-discord").innerHTML = "<strong>Copied</strong> !";
+  } catch (err) { }
+}
