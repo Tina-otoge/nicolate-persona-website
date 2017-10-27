@@ -293,3 +293,12 @@ aside p {
 }
 
 /* end of aside */
+
+#goUp {
+  background-color: #040000;
+  text-align: center;
+}
+
+#goUp img {
+  height: 210px;
+}
