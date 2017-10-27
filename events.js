@@ -1,14 +1,13 @@
 document.getElementById("arrowGoUp").onclick = function() {
   this.className = "bounce";
   setTimeout(function() {
-    if (window.navigator.userAgent.match(/Chrome|Gecko/)) {
+    try {
       window.scroll({
         top: 0,
         left: 0,
         behavior: 'smooth'
       });
-    }
-    else {
+    } catch(e) {
         window.scroll({
             top: 0,
             left: 0
