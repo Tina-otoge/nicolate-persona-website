@@ -165,6 +165,7 @@ nav div:hover > ins {
 }
 #discord {
   transform: rotate(15deg);
+  cursor: pointer;
 }
 #anipictures {
   transform: rotate(-25deg);
