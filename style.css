@@ -15,72 +15,64 @@ a:hover, a:active {color: #BD0000; text-decoration: underline;
 em {
   font-style: normal;
   background: #FFFFFF;
-  color: #040000;
+  color:      #040000;
 }
 
 strong {
-  color: #F40000;
+  color:       #F40000;
   font-weight: inherit;
 }
 
 ins {text-decoration: none}
 
-.touch-only {
-  display: inherit;
-}
-.no-touch {
-  display: none;
-}
+.touch-only {display: inherit}
+.no-touch   {display: none}
 @media (pointer: fine) {
-  .touch-only {
-    display: none;
-  }
-  .no-touch {
-    display: inherit;
-  }
+  .touch-only {display: none}
+  .no-touch   {display: inherit}
 }
 
 /* main */
 
 main {
-  min-height: calc(100vh - 770px);
-  padding: 300px 0 400px;
-  color: #dedede;
-  font-family: sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-  background: url('avatar.png') no-repeat center;
+  min-height:      calc(100vh - 770px);
+  padding:         300px 0 400px;
+  color:           #dedede;
+  font-family:     sans-serif;
+  font-size:       28px;
+  font-weight:     bold;
+  background:      url('avatar.png') no-repeat center;
   background-size: 300px;
 }
 
 main h1 {
-  position: absolute;
-  display: inline-block;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  max-width: 600px;
-  text-align: center;
-  margin: 0 auto 50px;
-  padding: 50px 80px;
-  background-image: url('smoke.png');
-  background-size: 100% 80%;
-  background-repeat: no-repeat;
+  position:            absolute;
+  display:             inline-block;
+  left:                0;
+  right:               0;
+  bottom:              0;
+  max-width:           600px;
+  text-align:          center;
+  margin:              0 auto 50px;
+  padding:             50px 80px;
+  background-image:    url('smoke.png');
+  background-size:     100% 80%;
+  background-repeat:   no-repeat;
   background-position: center;
-  font-size: 55px;
-  font-weight: 800;
-  letter-spacing: 2px;
+  font-size:           55px;
+  font-weight:         800;
+  letter-spacing:      2px;
 }
 
 main h1 > * {
-  display: inline-block;
-  position: relative;
-  padding: 0 5px;
-  margin: 0 -4px;
-  height: 60px;
+  display:     inline-block;
+  position:    relative;
+  padding:     0 5px;
+  margin:      0 -4px;
+  height:      60px;
   line-height: 50px;
-  background: #040000;
-  color: #FFFFFF;
+  background:  #040000;
+  color:       #FFFFFF;
 }
 
 #n, #c, #l, #t {transform: skewX(12deg); top: -5px}
@@ -90,163 +82,108 @@ main nav a, main nav a:visited, main nav a:active, main nav a:hover {
   color: #FFFFFF;
 }
 main nav {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 0;
-  /*height: 10px;/**/
-  width: 700px;
-  margin: auto;
+  position:  absolute;
+  top:       50%;
+  left:      0;
+  right:     0;
+  height:    0;
+  width:     700px;
+  margin:    auto;
   animation: float 12s infinite ease;
 }
 @media (max-height: 600px) {
   main {
     position: relative;
-    height: 600px;
-    padding: 0;
+    height:   600px;
+    padding:  0;
   }
-  main nav {
-    top: 300px;
-  }
+  main nav {top: 300px}
 }
 main nav > * {
   position: absolute;
-  display: block;
-  width: 250px;
+  display:  block;
+  width:    250px;
 }
 
-nav a, nav ins {
-  display: block;
-}
+nav a, nav ins {display: block}
 
 nav ins {
-  position: relative;
+  position:        relative;
   text-decoration: none;
-  font-size: .666em;
-  font-weight: normal;
+  font-size:       .666em; /* :D */
+  font-weight:     normal;
 }
 @media (pointer: fine) {
   nav ins {
-    top: -30px;
+    top:    -30px;
     opacity: 0;
   }
 }
 nav div:hover > ins {
-  top: 0;
+  top:     0;
   opacity: 1;
 }
 
 
-#twitter, #my_anime_list {
-  top: -210px;
-}
-#twitch, #steam {
-  top: -120px;
-}
-#curious_cat, #psn {
-  top: -30px;
-}
-#avatar-src, #discord {
-  top: 40px;
-}
-#anipictures, #ebooks {
-  top: 130px;
-}
+#twitter, #my_anime_list {top: -210px}
+#twitch, #steam          {top: -120px}
+#curious_cat, #psn       {top: -30px}
+#avatar-src, #discord    {top: 40px}
+#anipictures, #ebooks    {top: 130px}
 #my_anime_list, #steam, #psn, #discord, #ebooks {right: 0; margin-right: -1em; text-align: right}
 
-#twitter {
-  transform: rotate(25deg);
-}
-#twitch {
-  transform: rotate(10deg);
-}
-#curious_cat {
-  transform: rotate(2deg);
-}
-#avatar-src {
-  transform: rotate(-20deg);
-}
-#my_anime_list {    
-  transform: rotate(-20deg);
-}
-#steam {
-  transform: rotate(-10deg);
-}
-#psn {
-  transform: rotate(-2deg);
-}
-#discord {
-  transform: rotate(15deg);
-  cursor: pointer;
-}
-#anipictures {
-  transform: rotate(-25deg);
-}
-#ebooks {
-  transform: rotate(25deg);
-}
+#twitter       {transform: rotate(25deg)}
+#twitch        {transform: rotate(10deg)}
+#curious_cat   {transform: rotate(2deg)}
+#avatar-src    {transform: rotate(-20deg)}
+#my_anime_list {transform: rotate(-20deg)}
+#steam         {transform: rotate(-10deg)}
+#psn           {transform: rotate(-2deg)}
+#discord       {transform: rotate(15deg); cursor: pointer}
+#anipictures   {transform: rotate(-25deg)}
+#ebooks        {transform: rotate(25deg)}
 
 @keyframes float {
-  0% {
-    top: 50%;
-    left: 30px;
-  }
-  20% {
-    top: calc(50% + 7px);
-    left: 22px;
-  }
-  40% {
-    top: calc(50% - 4px);
-    left: 28px;
-  }
-  60% {
-    top: calc(50% + 4px);
-    left: 35px;
-  }
-  80% {
-    top: calc(50% - 7px);
-    left: 28px;
-  }
-  100% {
-    top: 50%;
-    left: 30px;
-  }
+  0%, 100% {top: 50%;             left: 30px}
+  20%      {top: calc(50% + 7px); left: 22px}
+  40%      {top: calc(50% - 4px); left: 28px}
+  60%      {top: calc(50% + 4px); left: 35px}
+  80%      {top: calc(50% - 7px); left: 28px}
 }
 
 #popup-discord {
-  visibility: hidden;
-  display: inline-block;
-  position: absolute;
-  left: 3em;
-  background: url('res/bubble.png') no-repeat;
+  display:         inline-block;
+  position:        absolute;
+  left:            3em;
+  height:          80px;
+  width:           220px;
+  padding:         120px 100px 60px 40px;
+  visibility:      hidden;
+  background:      url('res/bubble.png') no-repeat;
   background-size: 100% 100%;
-  height: 80px;
-  width: 220px;
-  padding: 120px 100px 60px 40px;
-  font-size: 20px;
-  text-align: center;
-  opacity: 0;
-  transition: visibility 0s, opacity .5s;
+  font-size:       20px;
+  text-align:      center;
+  opacity:         0;
+  transition:      visibility 0s, opacity .5s;
 }
 
 #popup-discord.show {
   visibility: visible;
-  opacity: 1;
+  opacity:    1;
 }
 
 #discord-tag {
   position: absolute;
-  left: -2000px;
-  top: -2000px;
-  opacity: 0;
+  left:    -2000px;
+  top:     -2000px;
+  opacity:  0;
 }
 
 #more {
   position: absolute;
-  left: 1em;
-  bottom: -10px;
-  width: 160px;
+  left:     1em;
+  bottom:  -10px;
+  width:    160px;
 }
 
 /* end of main */
@@ -254,123 +191,85 @@ nav div:hover > ins {
 /* aside */
 
 aside {
-  color: #FFFFFF;
+  color:       #FFFFFF;
   font-family: 'Alegreya', sans-serif;
-  font-size: 18px;
+  font-size:   18px;
 }
 aside > div {
+  height:            300px;
+  padding:           420px 0;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 300px;
-  padding: 420px 0;
+  background-size:   100% 100%;
 }
-aside p {
-  margin: 0;
-}
-#who {
-  background-image: url('res/who_bg.png');
-}
-#dev {
-  background-image: url('res/dev_bg.png');
-}
+aside p {margin: 0}
+#who {background-image: url('res/who_bg.png')}
+#dev {background-image: url('res/dev_bg.png')}
 
 .sender-pic {
-  width: 300px;
+  width:  300px;
   margin: 0 2em;
-  float: left;
+  float:  left;
 }
 .sender-name {
-  position: absolute;
-  top: 65px;
-  left: 100px;
-  width: 200px;
-  height: 20px;
-  transform: rotateZ(-17.5deg);
-  color: #040000;
-  text-align: center;
-  line-height: 22px;
-  font-size: 24px;
+  position:       absolute;
+  top:            65px;
+  left:           100px;
+  width:          200px;
+  height:         20px;
+  transform:      rotateZ(-17.5deg);
+  color:          #040000;
+  text-align:     center;
+  line-height:    22px;
+  font-size:      24px;
   letter-spacing: 1px;
 }
 .sender-name em {
+  display:          inline-block;
+  padding-bottom:   1px;
+  color:            #FFFFFF;
   background-color: #040000;
-  color: #FFFFFF;
-  display: inline-block;
-  padding-bottom: 1px;
 }
 
 .msg {
-  position: relative;
-  display: inline-block;
-  width: 550px;
-  padding: 120px 200px 60px 160px;
-  background: url('res/P5_textbox.png') no-repeat;
+  position:        relative;
+  display:         inline-block;
+  width:           550px;
+  padding:         120px 200px 60px 160px;
+  background:      url('res/P5_textbox.png') no-repeat;
   background-size: 100% 100%;
-  height: 100px;
-  vertical-align: center;
+  height:          100px;
+  vertical-align:  center;
 }
 @media (max-width: 1300px) {
-  aside {
-    font-size: 16px;
-  }
-  aside > div {
-    padding: 300px 0;
-  }
-  .msg {
-    width: 500px;
-    height: 70px;
-  }
-  .sender-pic {
-    width: 200px;
-  }
-  .sender-name {
-    font-size: 21px;
-    left: 75px;
-    top: 52px;
-  }
+  aside        {font-size: 16px}
+  aside > div  {padding: 300px 0}
+  .msg         {width: 500px; height: 70px}
+  .sender-pic  {width: 200px}
+  .sender-name {left: 75px; top: 52px; font-size: 21px}
 }
 @media (max-width: 1150px) {
-  aside {
-    font-size: 13px;
-  }
+  aside {font-size: 13px}
   aside > div {
     height: 150px;
     padding: 250px 0;
   }
-  .msg {
-    width: 350px;
-    height: 120px;
-    padding: 95px 155px 20px 120px;
-  }
-  .sender-pic {
-    width: 120px;
-  }
-  .sender-name {
-    top: 55px;
-    left: 40px;
-    font-size: 16px;
-  }
+  .msg         {width: 350px; height: 120px; padding: 95px 155px 20px 120px}
+  .sender-pic  {width: 120px}
+  .sender-name {top: 55px; left: 40px; font-size: 16px}
 }
 
 /* end of aside */
 
-#goUp {
-  text-align: center;
-}
+#goUp {text-align: center}
 
-#goUp img {
-  height: 210px;
-  width : 220px;
-  margin: 60px 0;
-}
-#goUp a.bounce img {
-    animation: .7s ease-out bounce;
-}
+#goUp img {height: 210px; width : 220px; margin: 60px 0}
+
+#goUp a.bounce img {animation: .7s ease-out bounce}
 
 @keyframes bounce {
-    0%, 50%, 100% {height:210px;margin:60px 0}
-    33% {height:280px;margin:25px 0}
-    66% {height:330px;margin:0}
+    0%, 50%, 100% {height:210px; margin:60px 0}
+    33%           {height:280px; margin:25px 0}
+    66%           {height:330px; margin:0}
 }
 
 /* end of aside */
@@ -378,13 +277,13 @@ aside p {
 /* footer */
 
 footer {
-  color: #FFFFFF;
-  font-size: 15px;
+  color:      #FFFFFF;
+  font-size:  15px;
   text-align: right;
-  margin: 1em 2em;
+  margin:     1em 2em;
 }
 
 footer h1 {
   font-size: 18px;
-  margin: 2px 0;
+  margin:    2px 0;
 }
