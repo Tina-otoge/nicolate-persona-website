@@ -107,21 +107,19 @@ nav a, nav ins {
 
 nav ins {
   position: relative;
-  top: -30px;
   text-decoration: none;
-  opacity: 0;
   font-size: .666em;
   font-weight: normal;
+}
+@media (pointer: fine) {
+  nav ins {
+    top: -30px;
+    opacity: 0;
+  }
 }
 nav div:hover > ins {
   top: 0;
   opacity: 1;
-}
-@media (pointer: coarse) or (pointer: none) {
-  nav ins {
-    top: 0;
-    opacity: 1;
-  }
 }
 
 
@@ -202,9 +200,10 @@ nav div:hover > ins {
 }
 
 #popup-discord {
+  visibility: hidden;
+  display: inline-block;
   position: absolute;
   left: 3em;
-  display: inline-block;
   background: url('res/bubble.png') no-repeat;
   background-size: 100% 100%;
   height: 80px;
@@ -213,14 +212,16 @@ nav div:hover > ins {
   font-size: 20px;
   text-align: center;
   opacity: 0;
+  transition: visibility 0s, opacity .5s;
 }
 
 #popup-discord.show {
+  visibility: visible;
   opacity: 1;
 }
 
 #discord-tag {
-  display: fixed;
+  position: absolute;
   left: -2000px;
   top: -2000px;
   opacity: 0;
