@@ -227,6 +227,13 @@ nav div:hover > ins {
   opacity: 0;
 }
 
+#more {
+  position: absolute;
+  left: 1em;
+  bottom: 10px;
+  width: 160px;
+}
+
 /* end of main */
 
 /* aside */
