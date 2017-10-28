@@ -18,17 +18,19 @@ function getBrowser()
 
 document.getElementById("arrowGoUp").onclick = function() {
   this.className = "bounce";
+
+  if (window.navigator.userAgent.search('OPR/') != -1)
+    return true;
+  if (['Chrome', 'Firefox'].indexOf(getBrowser()) != -1) {
+    setTimeout(function() {
+      window.scroll({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }, 500);
+  }
   setTimeout(function() {
-    var behavior = 'auto';
-    if (['Chrome', 'Firefox'].indexOf(getBrowser()) != -1)
-      behavior = 'smooth';
-    if (window.navigator.userAgent.search('OPR/') != -1)
-      return true;
-    window.scroll({
-      top: 0,
-      behavior: behavior
-    });
-  document.getElementById("arrowGoUp").className = '';
+    document.getElementById("arrowGoUp").className = '';
   }, 500);
 
 
