@@ -1,4 +1,4 @@
-body {margin:0;min-width: 800px}
+body {margin:0;min-width: 800px;background-color:#040000}
 
 a,
 ins,
@@ -34,7 +34,7 @@ main {
   font-family: sans-serif;
   font-size: 28px;
   font-weight: bold;
-  background: url('avatar.png') no-repeat center #040000;
+  background: url('avatar.png') no-repeat center;
   background-size: 300px;
 }
 
@@ -231,7 +231,6 @@ nav div:hover > ins {
 /* aside */
 
 aside {
-  background-color: #040000;
   color: #FFFFFF;
   font-family: 'Alegreya', sans-serif;
   font-size: 18px;
@@ -333,7 +332,6 @@ aside p {
 /* end of aside */
 
 #goUp {
-  background-color: #040000;
   text-align: center;
 }
 
