@@ -28,9 +28,15 @@ ins {text-decoration: none}
 .touch-only {
   display: inherit;
 }
+.no-touch {
+  display: none;
+}
 @media (pointer: fine) {
   .touch-only {
     display: none;
+  }
+  .no-touch {
+    display: inherit;
   }
 }
 
