@@ -25,6 +25,15 @@ strong {
 
 ins {text-decoration: none}
 
+.touch-only {
+  display: inherit;
+}
+@media (pointer: fine) {
+  .touch-only {
+    display: none;
+  }
+}
+
 /* main */
 
 main {
@@ -230,7 +239,7 @@ nav div:hover > ins {
 #more {
   position: absolute;
   left: 1em;
-  bottom: 10px;
+  bottom: 0;
   width: 160px;
 }
 
