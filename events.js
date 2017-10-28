@@ -7,7 +7,7 @@ function getBrowser()
   str = str.replace(/\)/ig, '');
   var arr = str.split(" ");
   while (i < arr.length) {
-    if (arr[i] == '')
+    if (arr[i] == '' || arr[i].startsWith("Version"))
       i += 1;
     if (n == 2)
       return (arr[i].split('/')[0]);
