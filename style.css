@@ -98,7 +98,7 @@ main nav {
 main nav > * {
   position: absolute;
   display: block;
-  width: 310px;
+  width: 250px;
 }
 
 nav a, nav ins {
