@@ -23,7 +23,7 @@ document.getElementById("arrowGoUp").onclick = function() {
     if (['Chrome', 'Firefox'].indexOf(getBrowser()) != -1)
       behavior = 'smooth';
     if (window.navigator.userAgent.search('OPR/') != -1)
-      behavior = 'auto';
+      return true;
     window.scroll({
       top: 0,
       behavior: behavior
