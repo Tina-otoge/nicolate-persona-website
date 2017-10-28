@@ -117,7 +117,7 @@ nav div:hover > ins {
   top: 0;
   opacity: 1;
 }
-@media (pointer: none) {
+@media (pointer: coarse) or (pointer: none) {
   nav ins {
     top: 0;
     opacity: 1;
