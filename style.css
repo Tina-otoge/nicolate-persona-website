@@ -1,4 +1,4 @@
-body {margin:0;min-width: 800px;background-color:#040000}
+body {margin:0;min-width: 800px;background-color:#000000}
 
 a,
 ins,
@@ -15,7 +15,7 @@ a:hover, a:active {color: #BD0000; text-decoration: underline;
 em {
   font-style: normal;
   background: #FFFFFF;
-  color:      #040000;
+  color:      #000000;
 }
 
 strong {
@@ -71,7 +71,7 @@ main h1 > * {
   margin:      0 -4px;
   height:      60px;
   line-height: 50px;
-  background:  #040000;
+  background:  #000000;
   color:       #FFFFFF;
 }
 
@@ -217,7 +217,7 @@ aside p {margin: 0}
   width:          200px;
   height:         20px;
   transform:      rotateZ(-17.5deg);
-  color:          #040000;
+  color:          #000000;
   text-align:     center;
   line-height:    22px;
   font-size:      24px;
@@ -227,7 +227,7 @@ aside p {margin: 0}
   display:          inline-block;
   padding-bottom:   1px;
   color:            #FFFFFF;
-  background-color: #040000;
+  background-color: #000000;
 }
 
 .msg {
