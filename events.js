@@ -39,7 +39,7 @@ document.getElementById("arrowGoUp").onclick = function() {
 
 document.getElementById("discord").onmouseenter = function() {
   var target = document.getElementById("popup-discord");
-  target.innerHTML = "Click on my Discord tag to <strong>Copy it</strong> !";
+  target.innerHTML = "Click <strong>here</strong> to copy the invite to my Discord !";
   target.className = "show";
 }
 document.getElementById("discord").onmouseleave = function() {
