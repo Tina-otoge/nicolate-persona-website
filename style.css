@@ -129,8 +129,8 @@ nav div:hover > ins {
 #twitch, #steam          {top: -120px}
 #retrospring, #psn       {top: -30px}
 #avatar-src, #discord    {top: 40px}
-#anipictures, #Nintendo_switch    {top: 130px}
-#my_anime_list, #steam, #psn, #discord, #Nintendo_switch {right: 0; margin-right: -1em; text-align: right}
+#anipictures, #nintendo_switch    {top: 130px}
+#my_anime_list, #steam, #psn, #discord, #nintendo_switch {right: 0; margin-right: -1em; text-align: right}
 
 #twitter       {transform: rotate(25deg)}
 #twitch        {transform: rotate(10deg)}
@@ -141,7 +141,7 @@ nav div:hover > ins {
 #psn           {transform: rotate(-2deg)}
 #discord       {transform: rotate(15deg); cursor: pointer}
 #anipictures   {transform: rotate(-25deg)}
-#Nintendo_switch        {transform: rotate(25deg)}
+#nintendo_switch        {transform: rotate(25deg)}
 
 @keyframes float {
   0%, 100% {top: 50%;             left: 30px}
