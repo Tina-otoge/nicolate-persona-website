@@ -37,6 +37,7 @@ document.getElementById("arrowGoUp").onclick = function() {
   return false;
 };
 
+/*
 document.getElementById("discord").onmouseenter = function() {
   var target = document.getElementById("popup-discord");
   target.innerHTML = "Click <strong>here</strong> to copy the invite to my Discord !";
@@ -55,3 +56,4 @@ document.getElementById("discord").onclick = function() {
     target = document.getElementById("popup-discord").innerHTML = "<strong>Copied</strong> !";
   } catch (err) { }
 }
+*/
