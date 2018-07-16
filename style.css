@@ -126,18 +126,18 @@ nav div:hover > ins {
 }
 
 
-#twitter, #my_anime_list {top: -210px}
-#twitch, #steam          {top: -120px}
-#retrospring, #psn       {top: -30px}
-#avatar-src, #discord    {top: 40px}
-#anipictures, #nintendo_switch    {top: 145px}
-#my_anime_list, #steam, #psn, #discord, #nintendo_switch {right: 0; margin-right: 0; text-align: right}
+#twitter, #anilist             {top: -210px}
+#twitch, #steam                {top: -120px}
+#curiouscat, #psn              {top: -30px}
+#avatar-src, #discord          {top: 40px}
+#anipictures, #nintendo_switch {top: 145px}
+#anilist, #steam, #psn, #discord, #nintendo_switch {right: 0; margin-right: 0; text-align: right}
 
 #twitter         {transform: rotate(25deg)}
 #twitch          {transform: rotate(10deg)}
-#retrospring     {transform: rotate(4deg)}
+#curiouscat      {transform: rotate(4deg)}
 #avatar-src      {transform: rotate(-20deg)}
-#my_anime_list   {transform: rotate(-20deg)}
+#anilist         {transform: rotate(-20deg)}
 #steam           {transform: rotate(-10deg)}
 #psn             {transform: rotate(-2deg)}
 #discord         {transform: rotate(15deg)}
