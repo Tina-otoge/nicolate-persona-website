@@ -87,7 +87,7 @@ main nav {
   left:      0;
   right:     0;
   height:    0;
-  width:     800px;
+  width:     700px;
   margin:    auto;
   animation: float 12s infinite ease;
 }
@@ -103,7 +103,6 @@ main nav > * {
   position: absolute;
   display:  block;
   width:    250px;
-  z-index: 2;
 }
 
 nav a, nav ins {display: block}
@@ -126,23 +125,23 @@ nav div:hover > ins {
 }
 
 
-#twitter, #my_anime_list {top: -210px}
+#twitter, #anilist {top: -210px}
 #twitch, #steam          {top: -120px}
-#retrospring, #psn       {top: -30px}
+#curiouscat, #psn       {top: -30px}
 #avatar-src, #discord    {top: 40px}
-#anipictures, #nintendo_switch    {top: 145px}
-#my_anime_list, #steam, #psn, #discord, #nintendo_switch {right: 0; margin-right: 0; text-align: right}
+#anipictures, #Nintendo_switch    {top: 130px}
+#anilist, #steam, #psn, #discord, #Nintendo_switch {right: 0; margin-right: -1em; text-align: right}
 
-#twitter         {transform: rotate(25deg)}
-#twitch          {transform: rotate(10deg)}
-#retrospring     {transform: rotate(4deg)}
-#avatar-src      {transform: rotate(-20deg)}
-#my_anime_list   {transform: rotate(-20deg)}
-#steam           {transform: rotate(-10deg)}
-#psn             {transform: rotate(-2deg)}
-#discord         {transform: rotate(15deg)}
-#anipictures     {transform: rotate(-25deg)}
-#nintendo_switch {transform: rotate(25deg)}
+#twitter       {transform: rotate(25deg)}
+#twitch        {transform: rotate(10deg)}
+#curiouscat   {transform: rotate(2deg)}
+#avatar-src    {transform: rotate(-20deg)}
+#anilist {transform: rotate(-20deg)}
+#steam         {transform: rotate(-10deg)}
+#psn           {transform: rotate(-2deg)}
+#discord       {transform: rotate(15deg); cursor: pointer}
+#anipictures   {transform: rotate(-25deg)}
+#Nintendo_switch        {transform: rotate(25deg)}
 
 @keyframes float {
   0%, 100% {top: 50%;             left: 30px}
@@ -152,7 +151,7 @@ nav div:hover > ins {
   80%      {top: calc(50% - 7px); left: 28px}
 }
 
-/* #popup-discord {
+#popup-discord {
   display:         inline-block;
   position:        absolute;
   left:            3em;
@@ -179,8 +178,6 @@ nav div:hover > ins {
   top:     -2000px;
   opacity:  0;
 }
-
-*/
 
 #more {
   position: absolute;
